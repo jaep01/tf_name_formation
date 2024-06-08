@@ -3,5 +3,6 @@
 # }
 
 output "resource_names" {
-  value = module.create_resource_name.resource_name
+  # value = module.create_resource_name.resource_name
+  value = module.create_resource_name.*
 }
