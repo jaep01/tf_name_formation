@@ -16,6 +16,7 @@ variable "base_name" {
 
 variable "resource_mapping" {
   type = map(any)
+  default = {}
 }
 
 variable "resource_name_max_length" {
