@@ -1,6 +1,6 @@
 variable "resource_type" {
   type        = string
-  description = "esource type to create. virtual_machine, key_vault, or storage_account are valid. Any other values will generate an error."
+  description = "Resource type to create. virtual_machine, key_vault, or storage_account are valid. Any other values will generate an error."
 }
 
 variable "base_name" {
