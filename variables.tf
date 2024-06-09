@@ -6,7 +6,7 @@
 # variable "base_name" {
 #   type        = string
 #   description = "Base name of a resource"
-}
+# }
 
 # variable "mapping" {
 #   type = map(string)
