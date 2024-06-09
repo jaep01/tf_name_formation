@@ -11,7 +11,7 @@ variable "base_name" {
 variable "mapping" {
   type = map(string)
   description = "Mapping of base_name and resource_type"
-  default = {}
+  # default = {}
 }
 
 variable "resource_name_max_length" {
