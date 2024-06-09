@@ -1,22 +1,11 @@
-# variable "resource_type" {
-#   type        = string
-#   description = "Resource type to create. virtual_machine, key_vault, or storage_account are valid. Any other values will generate an error."
-# }
+variable "resource_type" {
+  type        = string
+  description = "Resource type to create. virtual_machine, key_vault, or storage_account are valid. Any other values will generate an error."
+}
 
-# variable "base_name" {
-#   type        = string
-#   description = "Base name of a resource"
-# }
-
-# variable "mapping" {
-#   type = map(string)
-#   description = "Mapping of base_name and resource_type"
-#   # default = {}
-# }
-
-variable "resource_mapping" {
-  type = map(any)
-  default = {}
+variable "base_name" {
+  type        = string
+  description = "Base name of a resource"
 }
 
 variable "resource_name_max_length" {

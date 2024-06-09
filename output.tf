@@ -1,8 +1,3 @@
 output "resource_names" {
-  value = { for k, v in module.create_resource_name : k => v.resource_name }
+  value = { for name, type in module.create_resource_name : type.resource_name => var.resource_type } 
 }
-
-# output "resource_names" {
-#   # value = module.create_resource_name.resource_name
-#   value = module.create_resource_name.*
-# }
