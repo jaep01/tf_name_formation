@@ -1,6 +1,6 @@
 variable "resource_type" {
   type        = string
-  description = "Resource type to create. virtual_machine, key_vault, or storage_account are valid. Any other values will generate an error."
+  description = "Resource type to create. Choose from virtual_machine, key_vault, or storage_account."
 }
 
 variable "base_name" {
@@ -11,5 +11,5 @@ variable "base_name" {
 variable "resource_name_max_length" {
   type        = number
   default     = 15
-  description = "Maximum number of characters allowed in the resource name"
+  description = "Maximum number of characters allowed in a resource name"
 }
