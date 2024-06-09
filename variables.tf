@@ -8,10 +8,17 @@
 #   description = "Base name of a resource"
 # }
 
-variable "mapping" {
-  type = map(string)
-  description = "Mapping of base_name and resource_type"
-  # default = {}
+# variable "mapping" {
+#   type = map(string)
+#   description = "Mapping of base_name and resource_type"
+#   # default = {}
+# }
+
+variable "resource_mapping" {
+  type = map(object({
+    base_name = string
+    resource_type = string
+  }))
 }
 
 variable "resource_name_max_length" {
