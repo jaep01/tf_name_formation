@@ -1,3 +1,7 @@
+#
+# Module: tf_name_formation
+#
+
 variable "resource_type" {
   type        = string
   description = "Resource type to create. Choose from virtual_machine, key_vault, or storage_account."

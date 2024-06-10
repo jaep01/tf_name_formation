@@ -1,3 +1,7 @@
+#
+# Module: tf_name_formation
+#
+
 module "create_resource_name" {
   source                      = "github.com/jaep01/tf_name_module"
   for_each = tomap({
